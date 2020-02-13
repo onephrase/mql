@@ -2,9 +2,7 @@
 /**
  * @imports
  */
-import {
-	_isObject
-} from '@onephrase/commons/src/Js.js';
+import _isObject from '@onephrase/commons/js/isObject.js';
 import FetchInterface from './FetchInterface.js';
 
 /**

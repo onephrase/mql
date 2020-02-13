@@ -3,20 +3,12 @@
  * @imports
  */
 import {
-	_flatten
-} from '@onephrase/commons/src/Arr.js';
-import {
-	_mixin
-} from '@onephrase/commons/src/Js.js';
-import {
-	_find
-} from '@onephrase/commons/src/Obj.js';
-import {
-	_before
-} from '@onephrase/commons/src/Str.js';
-import {
 	Lexer
 } from '../index.js';
+import _mixin from '@onephrase/commons/js/mixin.js';
+import _flatten from '@onephrase/commons/arr/flatten.js';
+import _find from '@onephrase/commons/obj/find.js';
+import _before from '@onephrase/commons/str/before.js';
 import AggrInterface from './AggrInterface.js';
 import Window from './Window.js';
 import Call from './Call.js';

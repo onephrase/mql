@@ -3,16 +3,12 @@
  * @imports
  */
 import {
-	_isArray
-} from '@onephrase/commons/src/Js.js';
-import {
-	_from
-} from '@onephrase/commons/src/Obj.js';
-import {
 	AbstractionInterface,
 	ReferenceInterface,
 	Lexer
 } from '../index.js';
+import _isArray from '@onephrase/commons/js/isArray.js';
+import _objFrom from '@onephrase/commons/obj/from.js';
 import SelectInterface from './SelectInterface.js';
 import TableInterface from './TableInterface.js';
 import UnionInterface from './UnionInterface.js';
@@ -49,7 +45,7 @@ const Table = class extends TableInterface {
 		if (this.expr instanceof ReferenceInterface) {
 			// We must eval() without context...
 			if (this.expr.context) {
-				var tableData = this.expr.eval(_from(this.expr.context.name, database));
+				var tableData = this.expr.eval(_objFrom(this.expr.context.name, database));
 			} else {
 				this.expr.searchWithoutContext = false;
 				var tableData = this.expr.eval(database);

@@ -2,20 +2,14 @@
 /**
  * @imports
  */
-import {
-	_avg,
-	_unique,
-	_max,
-	_min,
-	_sum,
-	_rand
-} from '@onephrase/commons/src/Arr.js';
-import {
-	_isNull
-} from '@onephrase/commons/src/Js.js';
-import {
-	_after
-} from '@onephrase/commons/src/Str.js';
+import _avg from '@onephrase/commons/arr/avg.js';
+import _unique from '@onephrase/commons/arr/unique.js';
+import _max from '@onephrase/commons/arr/max.js';
+import _min from '@onephrase/commons/arr/min.js';
+import _sum from '@onephrase/commons/arr/sum.js';
+import _rand from '@onephrase/commons/arr/rand.js';
+import _isNull from '@onephrase/commons/js/isNull.js';
+import _after from '@onephrase/commons/str/after.js';
 
 /**
  * ---------------------------

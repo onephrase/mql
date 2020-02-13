@@ -5,13 +5,9 @@
 import {
 	Lexer
 } from '../index.js';
-import {
-	_inherit,
-	_copy
-} from '@onephrase/commons/src/Obj.js';
-import {
-	_after
-} from '@onephrase/commons/src/Str.js';
+import _inherit from '@onephrase/commons/obj/inherit.js';
+import _copy from '@onephrase/commons/obj/copy.js';
+import _after from '@onephrase/commons/str/after.js';
 import GroupByInterface from './GroupByInterface.js';
 import Row from '../Base/Row.js';
 

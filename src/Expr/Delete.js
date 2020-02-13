@@ -2,10 +2,8 @@
 /**
  * @imports
  */
-import {
-	_mixin,
-	_isArray
-} from '@onephrase/commons/src/Js.js';
+import _mixin from '@onephrase/commons/js/mixin.js';
+import _isArray from '@onephrase/commons/js/isArray.js';
 import Stmt from './Stmt.js';
 import DeleteInterface from './DeleteInterface.js';
 import Base from '../Base/Base.js';

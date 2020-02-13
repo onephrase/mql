@@ -2,10 +2,8 @@
 /**
  * @imports
  */
-import {
-	_merge,
-	_from
-} from '@onephrase/commons/src/Obj.js';
+import _merge from '@onephrase/commons/obj/merge.js';
+import _objFrom from '@onephrase/commons/obj/from.js';
 import Row from './Row.js';
 
 /**
@@ -63,7 +61,7 @@ const Base = class {
 		}
 		var tables = [this.table.alias];
 		var rowBase = new Row;
-		_merge(0, rowBase, _from(this.table.alias, this.table.fetch() || {}));
+		_merge(0, rowBase, _objFrom(this.table.alias, this.table.fetch() || {}));
 		// Add schema
 		if (Object.keys(this.schemas).length) {
 			rowBase['#'] = this.schemas;
@@ -71,7 +69,7 @@ const Base = class {
 		if (this.joins.length) {
 			this.joins.forEach(joinTable => {
 				tables.push(joinTable.alias);
-				_merge(0, rowBase, _from(joinTable.alias, joinTable.fetch()));
+				_merge(0, rowBase, _objFrom(joinTable.alias, joinTable.fetch()));
 				if (joinTable.join && joinTable.join.type && joinTable.join.type !== 'full') {
 					try {
 						if (joinTable.join.conditionClause.trim().toLowerCase() === 'using') {

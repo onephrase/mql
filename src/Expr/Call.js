@@ -5,10 +5,8 @@
 import {
 	Call as _Call
 } from '@onephrase/jsen';
-import {
-	_isUndefined,
-	_isFunction
-} from '@onephrase/commons/src/Js.js';
+import _isFunction from '@onephrase/commons/js/isFunction.js';
+import _isUndefined from '@onephrase/commons/js/isUndefined.js';
 
 /**
  * ---------------------------

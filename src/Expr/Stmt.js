@@ -3,15 +3,11 @@
  * @imports
  */
 import {
-	_each,
-	_find
-} from '@onephrase/commons/src/Obj.js';
-import {
-	_isArray
-} from '@onephrase/commons/src/Js.js';
-import {
 	Lexer
 } from '../index.js';
+import _isArray from '@onephrase/commons/js/isArray.js';
+import _each from '@onephrase/commons/obj/each.js';
+import _find from '@onephrase/commons/obj/find.js';
 import Table from './Table.js';
 
 /**

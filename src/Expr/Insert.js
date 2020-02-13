@@ -5,13 +5,9 @@
 import {
 	Lexer
 } from '../index.js';
-import {
-	_wrapped,
-	_unwrap
-} from '@onephrase/commons/src/Str.js';
-import {
-	_intersect
-} from '@onephrase/commons/src/Arr.js';
+import _wrapped from '@onephrase/commons/str/wrapped.js';
+import _unwrap from '@onephrase/commons/str/unwrap.js';
+import _intersect from '@onephrase/commons/arr/intersect.js';
 import InsertInterface from './InsertInterface.js';
 import Assignment from './Assignment.js';
 import Reference from './Reference.js';

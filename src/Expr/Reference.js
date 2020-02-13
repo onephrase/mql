@@ -6,14 +6,10 @@ import {
 	Lexer,
 	Reference as _Reference
 } from '@onephrase/jsen';
-import {
-	_isUndefined,
-	_isString,
-	_isEmpty
-} from '@onephrase/commons/src/Js.js';
-import {
-	_each
-} from '@onephrase/commons/src/Obj.js';
+import _each from '@onephrase/commons/obj/each.js';
+import _isString from '@onephrase/commons/js/isString.js';
+import _isEmpty from '@onephrase/commons/js/isEmpty.js';
+import _isUndefined from '@onephrase/commons/js/isUndefined.js';
 
 /**
  * ---------------------------

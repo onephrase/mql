@@ -3,15 +3,11 @@
  * @imports
  */
 import {
-	_inherit
-} from '@onephrase/commons/src/Obj.js';
-import {
-	_wrapped,
-	_unwrap
-} from '@onephrase/commons/src/Str.js';
-import {
 	Lexer
 } from '../index.js';
+import _inherit from '@onephrase/commons/obj/inherit.js';
+import _wrapped from '@onephrase/commons/str/wrapped.js';
+import _unwrap from '@onephrase/commons/str/unwrap.js';
 import WindowInterface from './WindowInterface.js';
 import OrderBy from './OrderBy.js';
 

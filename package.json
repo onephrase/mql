@@ -9,7 +9,7 @@
     "name": "Oxford Harrison",
     "email": "oxharriscreative@gmail.com"
   },
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "type": "module",
   "repository": {
@@ -23,8 +23,12 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
-    "@onephrase/commons": "^0.0.0",
-    "@onephrase/jsen": "^0.0.0"
+    "@onephrase/commons": "file:../commons",
+    "@onephrase/jsen": "file:../jsen"
+  },
+  "-dependencies": {
+    "@onephrase/commons": "^0.0.1",
+    "@onephrase/jsen": "^0.0.2"
   },
   "devDependencies": {
     "webpack": "^4.41.0",

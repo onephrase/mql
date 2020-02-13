@@ -7,13 +7,9 @@ import {
 	ReferenceInterface,
 	Lexer
 } from '../index.js';
-import {
-	_wrapped,
-	_unwrap
-} from '@onephrase/commons/src/Str.js';
-import {
-	_from
-} from '@onephrase/commons/src/Obj.js';
+import _wrapped from '@onephrase/commons/str/wrapped.js';
+import _unwrap from '@onephrase/commons/str/unwrap.js';
+import _objFrom from '@onephrase/commons/obj/from.js';
 import FieldInterface from './FieldInterface.js';
 
 /**
@@ -43,7 +39,7 @@ const Field = class extends FieldInterface {
 		} else {
 			var value = this.expr.eval(tempRow);
 		}
-		return _from(this.getAlias(), value);
+		return _objFrom(this.getAlias(), value);
 	}
 	
 	/**

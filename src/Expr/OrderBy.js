@@ -5,13 +5,9 @@
 import {
 	Lexer
 } from '../index.js';
-import {
-	_sort
-} from '@onephrase/commons/src/Arr.js';
-import {
-	_before,
-	_beforeLast
-} from '@onephrase/commons/src/Str.js';
+import _sort from '@onephrase/commons/arr/sort.js';
+import _before from '@onephrase/commons/str/before.js';
+import _beforeLast from '@onephrase/commons/str/beforeLast.js';
 import OrderByInterface from './OrderByInterface.js';
 
 /**

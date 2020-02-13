@@ -6,9 +6,7 @@ import {
 	Lexer,
 	Condition as _Condition
 } from '@onephrase/jsen';
-import {
-	_unwrap
-} from '@onephrase/commons/src/Str.js';
+import _unwrap from '@onephrase/commons/str/unwrap.js';
 
 /**
  * ---------------------------

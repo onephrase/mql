@@ -3,20 +3,14 @@
  * @imports
  */
 import {
-	_mixin,
-	_isArray
-} from '@onephrase/commons/src/Js.js';
-import {
-	_from as _arr_ftom,
-	_pushUnique
-} from '@onephrase/commons/src/Arr.js';
-import {
-	_merge,
-	_find
-} from '@onephrase/commons/src/Obj.js';
-import {
 	Lexer
 } from '../index.js';
+import _mixin from '@onephrase/commons/js/mixin.js';
+import _isArray from '@onephrase/commons/js/isArray.js';
+import _arrFrom from '@onephrase/commons/arr/from.js';
+import _pushUnique from '@onephrase/commons/arr/pushUnique.js';
+import _merge from '@onephrase/commons/obj/merge.js';
+import _find from '@onephrase/commons/obj/find.js';
 import SelectInterface from './SelectInterface.js';
 import AggrInterface from './AggrInterface.js';
 import Field from './Field.js';
@@ -189,7 +183,7 @@ const Select = class extends _mixin(Stmt, SelectInterface) {
 		var fields = null;
 		match.functions.forEach((func, i) => {
 			if (func.name.toLowerCase() === 'select') {
-				fields = _arr_ftom(fields).concat(func.args);
+				fields = _arrFrom(fields).concat(func.args);
 				match.functions.splice(i, 1);
 			}
 		});
@@ -214,7 +208,7 @@ const Select = class extends _mixin(Stmt, SelectInterface) {
 		} else if (_array(fields) || _array(match.body) || match.functions) {
 			fields = _array(fields) ? fields : match.body;
 			if (_array(fields) && fields.length > 1 
-			|| (_arr_ftom(fields)[0] === '*' && (fields = paramsObject_immediateTarget.blueprint().fields.keys()))
+			|| (_arrFrom(fields)[0] === '*' && (fields = paramsObject_immediateTarget.blueprint().fields.keys()))
 			|| (fields = paramsObject_immediateTarget.blueprint().defaultFields)) {
 				fields = fields.map(field => {
 					var {field, alias} = Static.splitAlias(field);

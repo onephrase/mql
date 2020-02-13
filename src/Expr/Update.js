@@ -5,10 +5,8 @@
 import {
 	Lexer
 } from '../index.js';
-import {
-	_mixin,
-	_isArray
-} from '@onephrase/commons/src/Js.js';
+import _mixin from '@onephrase/commons/js/mixin.js';
+import _isArray from '@onephrase/commons/js/isArray.js';
 import UpdateInterface from './UpdateInterface.js';
 import Assignment from './Assignment.js';
 import Base from '../Base/Base.js';
