@@ -23,10 +23,6 @@
     "watch": "webpack --watch"
   },
   "dependencies": {
-    "@onephrase/commons": "file:../commons",
-    "@onephrase/jsen": "file:../jsen"
-  },
-  "-dependencies": {
     "@onephrase/commons": "^0.0.1",
     "@onephrase/jsen": "^0.0.2"
   },
